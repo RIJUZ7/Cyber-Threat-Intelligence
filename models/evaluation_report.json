@@ -1,0 +1,315 @@
+{
+  "evaluation_timestamp": "2026-10-18T08:00:45.874274+00:00",
+  "model_architecture": "TF-IDF + Balanced Logistic Regression",
+  "dataset_name": "UCI SMS Spam Collection (Cleaned & Deduplicated)",
+  "train_samples": 4128,
+  "test_samples": 1032,
+  "train_spam_count": 514,
+  "train_ham_count": 3614,
+  "test_spam_count": 128,
+  "test_ham_count": 904,
+  "vocabulary_size": 10950,
+  "metrics": {
+    "accuracy": 0.9855,
+    "spam_precision": 0.9449,
+    "spam_recall": 0.9375,
+    "spam_f1": 0.9412,
+    "ham_precision": 0.9912,
+    "ham_recall": 0.9923,
+    "ham_f1": 0.9917
+  },
+  "confusion_matrix": {
+    "raw": [
+      [
+        897,
+        7
+      ],
+      [
+        8,
+        120
+      ]
+    ],
+    "true_negatives": 897,
+    "false_positives": 7,
+    "false_negatives": 8,
+    "true_positives": 120,
+    "labels": [
+      "ham (0)",
+      "spam (1)"
+    ]
+  },
+  "classification_report": {
+    "ham": {
+      "precision": 0.9911602209944751,
+      "recall": 0.9922566371681416,
+      "f1-score": 0.9917081260364843,
+      "support": 904.0
+    },
+    "spam": {
+      "precision": 0.9448818897637795,
+      "recall": 0.9375,
+      "f1-score": 0.9411764705882353,
+      "support": 128.0
+    },
+    "accuracy": 0.9854651162790697,
+    "macro avg": {
+      "precision": 0.9680210553791273,
+      "recall": 0.9648783185840708,
+      "f1-score": 0.9664422983123597,
+      "support": 1032.0
+    },
+    "weighted avg": {
+      "precision": 0.9854202729348539,
+      "recall": 0.9854651162790697,
+      "f1-score": 0.9854406338878643,
+      "support": 1032.0
+    }
+  },
+  "interpretability": {
+    "intercept": -2.3134,
+    "top_spam_features": [
+      {
+        "token": "call",
+        "weight": 7.903
+      },
+      {
+        "token": "txt",
+        "weight": 6.1882
+      },
+      {
+        "token": "text",
+        "weight": 6.007
+      },
+      {
+        "token": "free",
+        "weight": 5.236
+      },
+      {
+        "token": "to",
+        "weight": 4.9376
+      },
+      {
+        "token": "2",
+        "weight": 4.6701
+      },
+      {
+        "token": "your",
+        "weight": 4.5469
+      },
+      {
+        "token": "uk",
+        "weight": 4.4135
+      },
+      {
+        "token": "mobile",
+        "weight": 4.3016
+      },
+      {
+        "token": "150p",
+        "weight": 4.2957
+      },
+      {
+        "token": "www",
+        "weight": 4.0811
+      },
+      {
+        "token": "1",
+        "weight": 4.0205
+      },
+      {
+        "token": "stop",
+        "weight": 3.9505
+      },
+      {
+        "token": "claim",
+        "weight": 3.8672
+      },
+      {
+        "token": "reply",
+        "weight": 3.8477
+      },
+      {
+        "token": "sms",
+        "weight": 3.8094
+      },
+      {
+        "token": "won",
+        "weight": 3.743
+      },
+      {
+        "token": "now",
+        "weight": 3.6538
+      },
+      {
+        "token": "service",
+        "weight": 3.6058
+      },
+      {
+        "token": "ringtoneking",
+        "weight": 3.5515
+      },
+      {
+        "token": "com",
+        "weight": 3.5438
+      },
+      {
+        "token": "from",
+        "weight": 3.5067
+      },
+      {
+        "token": "chat",
+        "weight": 3.4198
+      },
+      {
+        "token": "ringtone",
+        "weight": 3.2458
+      },
+      {
+        "token": "c",
+        "weight": 3.2
+      },
+      {
+        "token": "50",
+        "weight": 3.1581
+      },
+      {
+        "token": "new",
+        "weight": 3.1258
+      },
+      {
+        "token": "tones",
+        "weight": 2.9779
+      },
+      {
+        "token": "win",
+        "weight": 2.9092
+      },
+      {
+        "token": "prize",
+        "weight": 2.8973
+      }
+    ],
+    "top_ham_features": [
+      {
+        "token": "i",
+        "weight": -6.6978
+      },
+      {
+        "token": "me",
+        "weight": -3.286
+      },
+      {
+        "token": "my",
+        "weight": -3.0846
+      },
+      {
+        "token": "ok",
+        "weight": -2.3959
+      },
+      {
+        "token": "lt",
+        "weight": -2.2414
+      },
+      {
+        "token": "gt",
+        "weight": -2.2379
+      },
+      {
+        "token": "that",
+        "weight": -2.1824
+      },
+      {
+        "token": "then",
+        "weight": -2.0973
+      },
+      {
+        "token": "he",
+        "weight": -2.0006
+      },
+      {
+        "token": "lt gt",
+        "weight": -1.9958
+      },
+      {
+        "token": "it",
+        "weight": -1.9303
+      },
+      {
+        "token": "da",
+        "weight": -1.8103
+      },
+      {
+        "token": "how",
+        "weight": -1.7603
+      },
+      {
+        "token": "k",
+        "weight": -1.7123
+      },
+      {
+        "token": "got",
+        "weight": -1.7077
+      },
+      {
+        "token": "its",
+        "weight": -1.6956
+      },
+      {
+        "token": "at",
+        "weight": -1.6311
+      },
+      {
+        "token": "come",
+        "weight": -1.6272
+      },
+      {
+        "token": "are you",
+        "weight": -1.626
+      },
+      {
+        "token": "lor",
+        "weight": -1.6137
+      },
+      {
+        "token": "when",
+        "weight": -1.6132
+      },
+      {
+        "token": "u",
+        "weight": -1.5726
+      },
+      {
+        "token": "later",
+        "weight": -1.5455
+      },
+      {
+        "token": "but",
+        "weight": -1.5448
+      },
+      {
+        "token": "home",
+        "weight": -1.5408
+      },
+      {
+        "token": "i m",
+        "weight": -1.4982
+      },
+      {
+        "token": "am",
+        "weight": -1.4525
+      },
+      {
+        "token": "going",
+        "weight": -1.4496
+      },
+      {
+        "token": "where",
+        "weight": -1.4262
+      },
+      {
+        "token": "in",
+        "weight": -1.3811
+      }
+    ]
+  }
+}

@@ -1,0 +1,1353 @@
+[
+  {
+    "id": "INV-2434A3D7",
+    "timestamp": "2026-10-19T05:18:57.336667+00:00",
+    "verdict": "NOT FLAGGED AS SPAM",
+    "heuristic_risk_score": 1,
+    "source_type": "email",
+    "sender": "ram@gmail.com",
+    "message_preview": "hi da",
+    "evidence_count": 0,
+    "high_severity_count": 0,
+    "analysis_data": {
+      "investigation_id": "INV-2434A3D7",
+      "timestamp": "2026-10-19T05:18:57.336667+00:00",
+      "verdict": "NOT FLAGGED AS SPAM",
+      "heuristic_risk_score": 1,
+      "model_probability": 0.0224,
+      "model_prediction": "HAM",
+      "model_confidence": 0.9776,
+      "explanation": "Assessed as NOT FLAGGED AS SPAM (Risk Score: 1/100). No critical credential extraction, coercive deadlines, or high-risk domain anomalies were identified. However, lack of detection does not guarantee absolute safety; always remain vigilant.",
+      "evidence_indicators": [],
+      "threat_fingerprint": {
+        "urgency": 0,
+        "impersonation": 0,
+        "suspicious_links": 0,
+        "credential_harvesting": 0,
+        "financial_pressure": 0,
+        "structural_obfuscation": 0,
+        "overall_score": 1
+      },
+      "extracted_urls": [],
+      "token_attributions": [
+        {
+          "token": "hi",
+          "contribution": -0.2035,
+          "direction": "ham",
+          "weight": -0.283,
+          "tfidf_val": 0.7192
+        },
+        {
+          "token": "da",
+          "contribution": -1.2578,
+          "direction": "ham",
+          "weight": -1.8103,
+          "tfidf_val": 0.6948
+        }
+      ],
+      "statistics": {
+        "char_count": 5,
+        "word_count": 2,
+        "line_count": 1,
+        "uppercase_ratio": 0.0,
+        "punctuation_count": 0,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Message appears routine. Follow standard cyber hygiene when opening attachments or external links.",
+        "Verify sender identity if the message unexpectedly requests confidential business information."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 4.01,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-19T05:18:57.336841+00:00",
+          "duration_ms": 0.14,
+          "status": "completed",
+          "details": "2 words, 5 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-19T05:18:57.340375+00:00",
+          "duration_ms": 3.49,
+          "status": "completed",
+          "details": "Prediction: HAM, Prob: 0.0224"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-19T05:18:57.340481+00:00",
+          "duration_ms": 0.06,
+          "status": "completed",
+          "details": "Identified 0 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-19T05:18:57.340514+00:00",
+          "duration_ms": 0.02,
+          "status": "completed",
+          "details": "Analyzed 0 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-19T05:18:57.340571+00:00",
+          "duration_ms": 0.05,
+          "status": "completed",
+          "details": "Verdict: NOT FLAGGED AS SPAM, Score: 1/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "ram@gmail.com",
+      "raw_message": "hi da"
+    }
+  },
+  {
+    "id": "INV-5810F9FA",
+    "timestamp": "2026-10-19T05:15:42.490554+00:00",
+    "verdict": "SPAM",
+    "heuristic_risk_score": 77,
+    "source_type": "email",
+    "sender": "alerts@chase-portal.xyz",
+    "message_preview": "URGENT: Chase account restricted! Verify password at http://192.168.1.1/login within 24 hours.",
+    "evidence_count": 1,
+    "high_severity_count": 0,
+    "analysis_data": {
+      "investigation_id": "INV-5810F9FA",
+      "timestamp": "2026-10-19T05:15:42.490554+00:00",
+      "verdict": "SPAM",
+      "heuristic_risk_score": 77,
+      "model_probability": 0.7723,
+      "model_prediction": "SPAM",
+      "model_confidence": 0.7723,
+      "explanation": "Classified as SPAM with a forensic risk score of 77/100. Key risk drivers include 1 extracted link(s) exhibiting redirection or domain risks, a machine-learning spam probability of 77.2%.",
+      "evidence_indicators": [
+        {
+          "id": "IND-001",
+          "rule_id": "R-URG-02",
+          "category": "Urgent & Coercive Language",
+          "name": "Imminent Deadline or Expiry Warning",
+          "severity": "caution",
+          "matched_text": "within 24 hours",
+          "start_idx": 78,
+          "end_idx": 93,
+          "explanation": "Artificial time limits pressure targets to act before consulting colleagues or checking security policies.",
+          "recommended_action": "Pause and assess whether the sender has established genuine authority or precedent for such deadlines."
+        }
+      ],
+      "threat_fingerprint": {
+        "urgency": 45,
+        "impersonation": 0,
+        "suspicious_links": 80,
+        "credential_harvesting": 0,
+        "financial_pressure": 0,
+        "structural_obfuscation": 28,
+        "overall_score": 77
+      },
+      "extracted_urls": [
+        {
+          "url": "http://192.168.1.1/login",
+          "domain": "192.168.1.1",
+          "scheme": "http",
+          "is_ip": true,
+          "is_shortened": false,
+          "suspicious_tld": false,
+          "has_lookalike_terms": false,
+          "risk_note": "Raw IP address used instead of hostname"
+        }
+      ],
+      "token_attributions": [
+        {
+          "token": "1",
+          "contribution": 1.3516,
+          "direction": "spam",
+          "weight": 4.0205,
+          "tfidf_val": 0.3362
+        },
+        {
+          "token": "http",
+          "contribution": 0.794,
+          "direction": "spam",
+          "weight": 2.8161,
+          "tfidf_val": 0.2819
+        },
+        {
+          "token": "urgent",
+          "contribution": 0.5539,
+          "direction": "spam",
+          "weight": 2.3819,
+          "tfidf_val": 0.2326
+        },
+        {
+          "token": "account",
+          "contribution": 0.3555,
+          "direction": "spam",
+          "weight": 1.3129,
+          "tfidf_val": 0.2707
+        },
+        {
+          "token": "within",
+          "contribution": 0.2835,
+          "direction": "spam",
+          "weight": 0.8846,
+          "tfidf_val": 0.3205
+        },
+        {
+          "token": "24",
+          "contribution": 0.2279,
+          "direction": "spam",
+          "weight": 0.6801,
+          "tfidf_val": 0.3351
+        },
+        {
+          "token": "verify",
+          "contribution": 0.1812,
+          "direction": "spam",
+          "weight": 0.5073,
+          "tfidf_val": 0.3573
+        },
+        {
+          "token": "login",
+          "contribution": 0.1083,
+          "direction": "spam",
+          "weight": 0.3232,
+          "tfidf_val": 0.3351
+        },
+        {
+          "token": "password",
+          "contribution": -0.0062,
+          "direction": "ham",
+          "weight": -0.0179,
+          "tfidf_val": 0.3448
+        },
+        {
+          "token": "hours",
+          "contribution": -0.0551,
+          "direction": "ham",
+          "weight": -0.1937,
+          "tfidf_val": 0.2846
+        },
+        {
+          "token": "at",
+          "contribution": -0.2597,
+          "direction": "ham",
+          "weight": -1.6311,
+          "tfidf_val": 0.1592
+        }
+      ],
+      "statistics": {
+        "char_count": 94,
+        "word_count": 11,
+        "line_count": 1,
+        "uppercase_ratio": 0.125,
+        "punctuation_count": 7,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Avoid clicking any links; inspect hostnames and SSL certificates manually if necessary.",
+        "Slow down: artificial time limits and threats of account closure are social-engineering pressure tactics."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 42.25,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-19T05:15:42.491236+00:00",
+          "duration_ms": 0.63,
+          "status": "completed",
+          "details": "11 words, 94 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-19T05:15:42.524751+00:00",
+          "duration_ms": 33.44,
+          "status": "completed",
+          "details": "Prediction: SPAM, Prob: 0.7723"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-19T05:15:42.531045+00:00",
+          "duration_ms": 6.18,
+          "status": "completed",
+          "details": "Identified 1 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-19T05:15:42.531448+00:00",
+          "duration_ms": 0.33,
+          "status": "completed",
+          "details": "Analyzed 1 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-19T05:15:42.532656+00:00",
+          "duration_ms": 1.19,
+          "status": "completed",
+          "details": "Verdict: SPAM, Score: 77/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "alerts@chase-portal.xyz",
+      "raw_message": "URGENT: Chase account restricted! Verify password at http://192.168.1.1/login within 24 hours."
+    }
+  },
+  {
+    "id": "INV-2CEA2394",
+    "timestamp": "2026-10-18T08:07:23.657047+00:00",
+    "verdict": "NOT FLAGGED AS SPAM",
+    "heuristic_risk_score": 17,
+    "source_type": "email",
+    "sender": "mark.colleague@company.com",
+    "message_preview": "Hi Mark, just following up on our project discussion. Let me know when you have time for a brief call next week.",
+    "evidence_count": 0,
+    "high_severity_count": 0,
+    "analysis_data": {
+      "investigation_id": "INV-2CEA2394",
+      "timestamp": "2026-10-18T08:07:23.657047+00:00",
+      "verdict": "NOT FLAGGED AS SPAM",
+      "heuristic_risk_score": 17,
+      "model_probability": 0.3429,
+      "model_prediction": "HAM",
+      "model_confidence": 0.6571,
+      "explanation": "Assessed as NOT FLAGGED AS SPAM (Risk Score: 17/100). No critical credential extraction, coercive deadlines, or high-risk domain anomalies were identified. However, lack of detection does not guarantee absolute safety; always remain vigilant.",
+      "evidence_indicators": [],
+      "threat_fingerprint": {
+        "urgency": 0,
+        "impersonation": 0,
+        "suspicious_links": 0,
+        "credential_harvesting": 0,
+        "financial_pressure": 0,
+        "structural_obfuscation": 0,
+        "overall_score": 17
+      },
+      "extracted_urls": [],
+      "token_attributions": [
+        {
+          "token": "call",
+          "contribution": 0.9619,
+          "direction": "spam",
+          "weight": 7.903,
+          "tfidf_val": 0.1217
+        },
+        {
+          "token": "you have",
+          "contribution": 0.4283,
+          "direction": "spam",
+          "weight": 2.4359,
+          "tfidf_val": 0.1758
+        },
+        {
+          "token": "our",
+          "contribution": 0.3193,
+          "direction": "spam",
+          "weight": 1.9396,
+          "tfidf_val": 0.1646
+        },
+        {
+          "token": "for",
+          "contribution": 0.2947,
+          "direction": "spam",
+          "weight": 2.6284,
+          "tfidf_val": 0.1121
+        },
+        {
+          "token": "next",
+          "contribution": 0.2531,
+          "direction": "spam",
+          "weight": 1.3401,
+          "tfidf_val": 0.1888
+        },
+        {
+          "token": "week",
+          "contribution": 0.2451,
+          "direction": "spam",
+          "weight": 1.4084,
+          "tfidf_val": 0.1741
+        },
+        {
+          "token": "a",
+          "contribution": 0.2164,
+          "direction": "spam",
+          "weight": 2.3609,
+          "tfidf_val": 0.0916
+        },
+        {
+          "token": "following",
+          "contribution": 0.1924,
+          "direction": "spam",
+          "weight": 0.7217,
+          "tfidf_val": 0.2666
+        },
+        {
+          "token": "on",
+          "contribution": 0.1661,
+          "direction": "spam",
+          "weight": 1.3571,
+          "tfidf_val": 0.1224
+        },
+        {
+          "token": "time for",
+          "contribution": 0.1348,
+          "direction": "spam",
+          "weight": 0.4935,
+          "tfidf_val": 0.273
+        },
+        {
+          "token": "have",
+          "contribution": 0.1065,
+          "direction": "spam",
+          "weight": 0.9011,
+          "tfidf_val": 0.1182
+        },
+        {
+          "token": "for a",
+          "contribution": 0.0371,
+          "direction": "spam",
+          "weight": 0.1815,
+          "tfidf_val": 0.2042
+        },
+        {
+          "token": "just",
+          "contribution": -0.024,
+          "direction": "ham",
+          "weight": -0.1826,
+          "tfidf_val": 0.1315
+        },
+        {
+          "token": "up on",
+          "contribution": -0.0372,
+          "direction": "ham",
+          "weight": -0.1424,
+          "tfidf_val": 0.2611
+        },
+        {
+          "token": "know when",
+          "contribution": -0.0431,
+          "direction": "ham",
+          "weight": -0.1803,
+          "tfidf_val": 0.2392
+        },
+        {
+          "token": "hi",
+          "contribution": -0.0483,
+          "direction": "ham",
+          "weight": -0.283,
+          "tfidf_val": 0.1708
+        },
+        {
+          "token": "mark",
+          "contribution": -0.0501,
+          "direction": "ham",
+          "weight": -0.1953,
+          "tfidf_val": 0.2564
+        },
+        {
+          "token": "you",
+          "contribution": -0.0531,
+          "direction": "ham",
+          "weight": -0.6735,
+          "tfidf_val": 0.0788
+        },
+        {
+          "token": "project",
+          "contribution": -0.0567,
+          "direction": "ham",
+          "weight": -0.2344,
+          "tfidf_val": 0.2421
+        },
+        {
+          "token": "me know",
+          "contribution": -0.058,
+          "direction": "ham",
+          "weight": -0.259,
+          "tfidf_val": 0.224
+        }
+      ],
+      "statistics": {
+        "char_count": 112,
+        "word_count": 22,
+        "line_count": 1,
+        "uppercase_ratio": 0.034,
+        "punctuation_count": 3,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Message appears routine. Follow standard cyber hygiene when opening attachments or external links.",
+        "Verify sender identity if the message unexpectedly requests confidential business information."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 2.71,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-18T08:07:23.657182+00:00",
+          "duration_ms": 0.1,
+          "status": "completed",
+          "details": "22 words, 112 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-18T08:07:23.659498+00:00",
+          "duration_ms": 2.29,
+          "status": "completed",
+          "details": "Prediction: HAM, Prob: 0.3429"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-18T08:07:23.659612+00:00",
+          "duration_ms": 0.09,
+          "status": "completed",
+          "details": "Identified 0 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-18T08:07:23.659631+00:00",
+          "duration_ms": 0.01,
+          "status": "completed",
+          "details": "Analyzed 0 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-18T08:07:23.659661+00:00",
+          "duration_ms": 0.03,
+          "status": "completed",
+          "details": "Verdict: NOT FLAGGED AS SPAM, Score: 17/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "mark.colleague@company.com",
+      "raw_message": "Hi Mark, just following up on our project discussion. Let me know when you have time for a brief call next week."
+    }
+  },
+  {
+    "id": "INV-867F58FD",
+    "timestamp": "2026-10-18T08:07:23.624617+00:00",
+    "verdict": "SPAM",
+    "heuristic_risk_score": 100,
+    "source_type": "email",
+    "sender": "service@paypal-alerts-support.xyz",
+    "message_preview": "URGENT NOTICE: Your PayPal account has been suspended due to suspicious activity. Immediate action required! Verify your...",
+    "evidence_count": 5,
+    "high_severity_count": 3,
+    "analysis_data": {
+      "investigation_id": "INV-867F58FD",
+      "timestamp": "2026-10-18T08:07:23.624617+00:00",
+      "verdict": "SPAM",
+      "heuristic_risk_score": 100,
+      "model_probability": 0.9058,
+      "model_prediction": "SPAM",
+      "model_confidence": 0.9058,
+      "explanation": "Classified as SPAM with a forensic risk score of 100/100. Key risk drivers include 3 high-severity forensic indicator(s), 1 extracted link(s) exhibiting redirection or domain risks, a machine-learning spam probability of 90.6%.",
+      "evidence_indicators": [
+        {
+          "id": "IND-001",
+          "rule_id": "R-URG-01",
+          "category": "Urgent & Coercive Language",
+          "name": "Immediate Action Demand",
+          "severity": "high",
+          "matched_text": "Immediate action required",
+          "start_idx": 82,
+          "end_idx": 107,
+          "explanation": "Threat actors manufacture artificial urgency to bypass logical evaluation and provoke hasty compliance.",
+          "recommended_action": "Do not rush. Independently verify the claim via a trusted, known communication channel before responding."
+        },
+        {
+          "id": "IND-002",
+          "rule_id": "R-URG-02",
+          "category": "Urgent & Coercive Language",
+          "name": "Imminent Deadline or Expiry Warning",
+          "severity": "caution",
+          "matched_text": "within 24 hours",
+          "start_idx": 156,
+          "end_idx": 171,
+          "explanation": "Artificial time limits pressure targets to act before consulting colleagues or checking security policies.",
+          "recommended_action": "Pause and assess whether the sender has established genuine authority or precedent for such deadlines."
+        },
+        {
+          "id": "IND-003",
+          "rule_id": "R-SEC-01",
+          "category": "Credential Harvesting",
+          "name": "Password or Passcode Solicitation",
+          "severity": "high",
+          "matched_text": "Verify your password",
+          "start_idx": 109,
+          "end_idx": 129,
+          "explanation": "Legitimate services rarely request direct password entry or confirmation via unsolicited messages.",
+          "recommended_action": "Never provide passwords, passcodes, or credentials in response to an email, SMS, or inbound message."
+        },
+        {
+          "id": "IND-004",
+          "rule_id": "R-THR-01",
+          "category": "Threat & Extortion",
+          "name": "Account Suspension / Termination Threat",
+          "severity": "high",
+          "matched_text": "account has been suspended",
+          "start_idx": 27,
+          "end_idx": 53,
+          "explanation": "Coercive threats of account deactivation or legal prosecution compel victims to act out of fear without verifying legitimacy.",
+          "recommended_action": "Check the account status directly on the official app or website by typing the verified URL in your browser."
+        },
+        {
+          "id": "IND-005",
+          "rule_id": "R-ACT-01",
+          "category": "Action Pressure",
+          "name": "Direct Call-to-Action Link",
+          "severity": "caution",
+          "matched_text": "Click here",
+          "start_idx": 173,
+          "end_idx": 183,
+          "explanation": "Direct instructions to click or call remove friction and guide victims directly into malicious funnels.",
+          "recommended_action": "Do not click links embedded in unsolicited messages. Inspect the destination domain carefully."
+        }
+      ],
+      "threat_fingerprint": {
+        "urgency": 100,
+        "impersonation": 0,
+        "suspicious_links": 80,
+        "credential_harvesting": 50,
+        "financial_pressure": 25,
+        "structural_obfuscation": 35,
+        "overall_score": 100
+      },
+      "extracted_urls": [
+        {
+          "url": "http://192.168.1.1/login",
+          "domain": "192.168.1.1",
+          "scheme": "http",
+          "is_ip": true,
+          "is_shortened": false,
+          "suspicious_tld": false,
+          "has_lookalike_terms": false,
+          "risk_note": "Raw IP address used instead of hostname"
+        }
+      ],
+      "token_attributions": [
+        {
+          "token": "your",
+          "contribution": 0.923,
+          "direction": "spam",
+          "weight": 4.5469,
+          "tfidf_val": 0.203
+        },
+        {
+          "token": "1",
+          "contribution": 0.921,
+          "direction": "spam",
+          "weight": 4.0205,
+          "tfidf_val": 0.2291
+        },
+        {
+          "token": "to",
+          "contribution": 0.544,
+          "direction": "spam",
+          "weight": 4.9376,
+          "tfidf_val": 0.1102
+        },
+        {
+          "token": "http",
+          "contribution": 0.541,
+          "direction": "spam",
+          "weight": 2.8161,
+          "tfidf_val": 0.1921
+        },
+        {
+          "token": "urgent",
+          "contribution": 0.3775,
+          "direction": "spam",
+          "weight": 2.3819,
+          "tfidf_val": 0.1585
+        },
+        {
+          "token": "account",
+          "contribution": 0.2422,
+          "direction": "spam",
+          "weight": 1.3129,
+          "tfidf_val": 0.1845
+        },
+        {
+          "token": "notice",
+          "contribution": 0.2397,
+          "direction": "spam",
+          "weight": 1.0975,
+          "tfidf_val": 0.2184
+        },
+        {
+          "token": "within",
+          "contribution": 0.1932,
+          "direction": "spam",
+          "weight": 0.8846,
+          "tfidf_val": 0.2184
+        },
+        {
+          "token": "been",
+          "contribution": 0.1855,
+          "direction": "spam",
+          "weight": 1.2988,
+          "tfidf_val": 0.1428
+        },
+        {
+          "token": "24",
+          "contribution": 0.1553,
+          "direction": "spam",
+          "weight": 0.6801,
+          "tfidf_val": 0.2283
+        },
+        {
+          "token": "click",
+          "contribution": 0.1482,
+          "direction": "spam",
+          "weight": 0.6647,
+          "tfidf_val": 0.2229
+        },
+        {
+          "token": "verify",
+          "contribution": 0.1235,
+          "direction": "spam",
+          "weight": 0.5073,
+          "tfidf_val": 0.2435
+        },
+        {
+          "token": "login",
+          "contribution": 0.0738,
+          "direction": "spam",
+          "weight": 0.3232,
+          "tfidf_val": 0.2283
+        },
+        {
+          "token": "action",
+          "contribution": 0.0584,
+          "direction": "spam",
+          "weight": 0.2398,
+          "tfidf_val": 0.2435
+        },
+        {
+          "token": "has",
+          "contribution": 0.0515,
+          "direction": "spam",
+          "weight": 0.3466,
+          "tfidf_val": 0.1486
+        },
+        {
+          "token": "and",
+          "contribution": 0.0483,
+          "direction": "spam",
+          "weight": 0.5624,
+          "tfidf_val": 0.0858
+        },
+        {
+          "token": "has been",
+          "contribution": 0.0285,
+          "direction": "spam",
+          "weight": 0.1498,
+          "tfidf_val": 0.1904
+        },
+        {
+          "token": "activate",
+          "contribution": 0.0173,
+          "direction": "spam",
+          "weight": 0.0736,
+          "tfidf_val": 0.2349
+        },
+        {
+          "token": "due",
+          "contribution": 0.0152,
+          "direction": "spam",
+          "weight": 0.0646,
+          "tfidf_val": 0.2349
+        },
+        {
+          "token": "password",
+          "contribution": -0.0042,
+          "direction": "ham",
+          "weight": -0.0179,
+          "tfidf_val": 0.2349
+        }
+      ],
+      "statistics": {
+        "char_count": 224,
+        "word_count": 30,
+        "line_count": 1,
+        "uppercase_ratio": 0.105,
+        "punctuation_count": 10,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Do NOT submit any usernames, passwords, or one-time passcodes (OTPs).",
+        "Avoid clicking any links; inspect hostnames and SSL certificates manually if necessary.",
+        "Disregard claims of unexpected prize payouts, inheritances, or wire demands.",
+        "Slow down: artificial time limits and threats of account closure are social-engineering pressure tactics."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 21.31,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-18T08:07:23.625011+00:00",
+          "duration_ms": 0.37,
+          "status": "completed",
+          "details": "30 words, 224 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-18T08:07:23.641745+00:00",
+          "duration_ms": 16.69,
+          "status": "completed",
+          "details": "Prediction: SPAM, Prob: 0.9058"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-18T08:07:23.645527+00:00",
+          "duration_ms": 3.73,
+          "status": "completed",
+          "details": "Identified 5 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-18T08:07:23.645804+00:00",
+          "duration_ms": 0.24,
+          "status": "completed",
+          "details": "Analyzed 1 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-18T08:07:23.645869+00:00",
+          "duration_ms": 0.05,
+          "status": "completed",
+          "details": "Verdict: SPAM, Score: 100/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "service@paypal-alerts-support.xyz",
+      "raw_message": "URGENT NOTICE: Your PayPal account has been suspended due to suspicious activity. Immediate action required! Verify your password and confirm your identity within 24 hours. Click here to re-activate: http://192.168.1.1/login"
+    }
+  },
+  {
+    "id": "INV-6A72E892",
+    "timestamp": "2026-10-18T08:06:27.581419+00:00",
+    "verdict": "NOT FLAGGED AS SPAM",
+    "heuristic_risk_score": 17,
+    "source_type": "email",
+    "sender": "mark.colleague@company.com",
+    "message_preview": "Hi Mark, just following up on our project discussion. Let me know when you have time for a brief call next week.",
+    "evidence_count": 0,
+    "high_severity_count": 0,
+    "analysis_data": {
+      "investigation_id": "INV-6A72E892",
+      "timestamp": "2026-10-18T08:06:27.581419+00:00",
+      "verdict": "NOT FLAGGED AS SPAM",
+      "heuristic_risk_score": 17,
+      "model_probability": 0.3429,
+      "model_prediction": "HAM",
+      "model_confidence": 0.6571,
+      "explanation": "Assessed as NOT FLAGGED AS SPAM (Risk Score: 17/100). No critical credential extraction, coercive deadlines, or high-risk domain anomalies were identified. However, lack of detection does not guarantee absolute safety; always remain vigilant.",
+      "evidence_indicators": [],
+      "threat_fingerprint": {
+        "urgency": 0,
+        "impersonation": 0,
+        "suspicious_links": 0,
+        "credential_harvesting": 0,
+        "financial_pressure": 0,
+        "structural_obfuscation": 0,
+        "overall_score": 17
+      },
+      "extracted_urls": [],
+      "token_attributions": [
+        {
+          "token": "call",
+          "contribution": 0.9619,
+          "direction": "spam",
+          "weight": 7.903,
+          "tfidf_val": 0.1217
+        },
+        {
+          "token": "you have",
+          "contribution": 0.4283,
+          "direction": "spam",
+          "weight": 2.4359,
+          "tfidf_val": 0.1758
+        },
+        {
+          "token": "our",
+          "contribution": 0.3193,
+          "direction": "spam",
+          "weight": 1.9396,
+          "tfidf_val": 0.1646
+        },
+        {
+          "token": "for",
+          "contribution": 0.2947,
+          "direction": "spam",
+          "weight": 2.6284,
+          "tfidf_val": 0.1121
+        },
+        {
+          "token": "next",
+          "contribution": 0.2531,
+          "direction": "spam",
+          "weight": 1.3401,
+          "tfidf_val": 0.1888
+        },
+        {
+          "token": "week",
+          "contribution": 0.2451,
+          "direction": "spam",
+          "weight": 1.4084,
+          "tfidf_val": 0.1741
+        },
+        {
+          "token": "a",
+          "contribution": 0.2164,
+          "direction": "spam",
+          "weight": 2.3609,
+          "tfidf_val": 0.0916
+        },
+        {
+          "token": "following",
+          "contribution": 0.1924,
+          "direction": "spam",
+          "weight": 0.7217,
+          "tfidf_val": 0.2666
+        },
+        {
+          "token": "on",
+          "contribution": 0.1661,
+          "direction": "spam",
+          "weight": 1.3571,
+          "tfidf_val": 0.1224
+        },
+        {
+          "token": "time for",
+          "contribution": 0.1348,
+          "direction": "spam",
+          "weight": 0.4935,
+          "tfidf_val": 0.273
+        },
+        {
+          "token": "have",
+          "contribution": 0.1065,
+          "direction": "spam",
+          "weight": 0.9011,
+          "tfidf_val": 0.1182
+        },
+        {
+          "token": "for a",
+          "contribution": 0.0371,
+          "direction": "spam",
+          "weight": 0.1815,
+          "tfidf_val": 0.2042
+        },
+        {
+          "token": "just",
+          "contribution": -0.024,
+          "direction": "ham",
+          "weight": -0.1826,
+          "tfidf_val": 0.1315
+        },
+        {
+          "token": "up on",
+          "contribution": -0.0372,
+          "direction": "ham",
+          "weight": -0.1424,
+          "tfidf_val": 0.2611
+        },
+        {
+          "token": "know when",
+          "contribution": -0.0431,
+          "direction": "ham",
+          "weight": -0.1803,
+          "tfidf_val": 0.2392
+        },
+        {
+          "token": "hi",
+          "contribution": -0.0483,
+          "direction": "ham",
+          "weight": -0.283,
+          "tfidf_val": 0.1708
+        },
+        {
+          "token": "mark",
+          "contribution": -0.0501,
+          "direction": "ham",
+          "weight": -0.1953,
+          "tfidf_val": 0.2564
+        },
+        {
+          "token": "you",
+          "contribution": -0.0531,
+          "direction": "ham",
+          "weight": -0.6735,
+          "tfidf_val": 0.0788
+        },
+        {
+          "token": "project",
+          "contribution": -0.0567,
+          "direction": "ham",
+          "weight": -0.2344,
+          "tfidf_val": 0.2421
+        },
+        {
+          "token": "me know",
+          "contribution": -0.058,
+          "direction": "ham",
+          "weight": -0.259,
+          "tfidf_val": 0.224
+        }
+      ],
+      "statistics": {
+        "char_count": 112,
+        "word_count": 22,
+        "line_count": 1,
+        "uppercase_ratio": 0.034,
+        "punctuation_count": 3,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Message appears routine. Follow standard cyber hygiene when opening attachments or external links.",
+        "Verify sender identity if the message unexpectedly requests confidential business information."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 3.79,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-18T08:06:27.581514+00:00",
+          "duration_ms": 0.08,
+          "status": "completed",
+          "details": "22 words, 112 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-18T08:06:27.584636+00:00",
+          "duration_ms": 3.1,
+          "status": "completed",
+          "details": "Prediction: HAM, Prob: 0.3429"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-18T08:06:27.585024+00:00",
+          "duration_ms": 0.33,
+          "status": "completed",
+          "details": "Identified 0 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-18T08:06:27.585091+00:00",
+          "duration_ms": 0.02,
+          "status": "completed",
+          "details": "Analyzed 0 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-18T08:06:27.585160+00:00",
+          "duration_ms": 0.05,
+          "status": "completed",
+          "details": "Verdict: NOT FLAGGED AS SPAM, Score: 17/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "mark.colleague@company.com",
+      "raw_message": "Hi Mark, just following up on our project discussion. Let me know when you have time for a brief call next week."
+    }
+  },
+  {
+    "id": "INV-BDDC2A97",
+    "timestamp": "2026-10-18T08:06:27.536408+00:00",
+    "verdict": "SPAM",
+    "heuristic_risk_score": 100,
+    "source_type": "email",
+    "sender": "service@paypal-alerts-support.xyz",
+    "message_preview": "URGENT NOTICE: Your PayPal account has been suspended due to suspicious activity. Immediate action required! Verify your...",
+    "evidence_count": 5,
+    "high_severity_count": 3,
+    "analysis_data": {
+      "investigation_id": "INV-BDDC2A97",
+      "timestamp": "2026-10-18T08:06:27.536408+00:00",
+      "verdict": "SPAM",
+      "heuristic_risk_score": 100,
+      "model_probability": 0.9058,
+      "model_prediction": "SPAM",
+      "model_confidence": 0.9058,
+      "explanation": "Classified as SPAM with a forensic risk score of 100/100. Key risk drivers include 3 high-severity forensic indicator(s), 1 extracted link(s) exhibiting redirection or domain risks, a machine-learning spam probability of 90.6%.",
+      "evidence_indicators": [
+        {
+          "id": "IND-001",
+          "rule_id": "R-URG-01",
+          "category": "Urgent & Coercive Language",
+          "name": "Immediate Action Demand",
+          "severity": "high",
+          "matched_text": "Immediate action required",
+          "start_idx": 82,
+          "end_idx": 107,
+          "explanation": "Threat actors manufacture artificial urgency to bypass logical evaluation and provoke hasty compliance.",
+          "recommended_action": "Do not rush. Independently verify the claim via a trusted, known communication channel before responding."
+        },
+        {
+          "id": "IND-002",
+          "rule_id": "R-URG-02",
+          "category": "Urgent & Coercive Language",
+          "name": "Imminent Deadline or Expiry Warning",
+          "severity": "caution",
+          "matched_text": "within 24 hours",
+          "start_idx": 156,
+          "end_idx": 171,
+          "explanation": "Artificial time limits pressure targets to act before consulting colleagues or checking security policies.",
+          "recommended_action": "Pause and assess whether the sender has established genuine authority or precedent for such deadlines."
+        },
+        {
+          "id": "IND-003",
+          "rule_id": "R-SEC-01",
+          "category": "Credential Harvesting",
+          "name": "Password or Passcode Solicitation",
+          "severity": "high",
+          "matched_text": "Verify your password",
+          "start_idx": 109,
+          "end_idx": 129,
+          "explanation": "Legitimate services rarely request direct password entry or confirmation via unsolicited messages.",
+          "recommended_action": "Never provide passwords, passcodes, or credentials in response to an email, SMS, or inbound message."
+        },
+        {
+          "id": "IND-004",
+          "rule_id": "R-THR-01",
+          "category": "Threat & Extortion",
+          "name": "Account Suspension / Termination Threat",
+          "severity": "high",
+          "matched_text": "account has been suspended",
+          "start_idx": 27,
+          "end_idx": 53,
+          "explanation": "Coercive threats of account deactivation or legal prosecution compel victims to act out of fear without verifying legitimacy.",
+          "recommended_action": "Check the account status directly on the official app or website by typing the verified URL in your browser."
+        },
+        {
+          "id": "IND-005",
+          "rule_id": "R-ACT-01",
+          "category": "Action Pressure",
+          "name": "Direct Call-to-Action Link",
+          "severity": "caution",
+          "matched_text": "Click here",
+          "start_idx": 173,
+          "end_idx": 183,
+          "explanation": "Direct instructions to click or call remove friction and guide victims directly into malicious funnels.",
+          "recommended_action": "Do not click links embedded in unsolicited messages. Inspect the destination domain carefully."
+        }
+      ],
+      "threat_fingerprint": {
+        "urgency": 100,
+        "impersonation": 0,
+        "suspicious_links": 80,
+        "credential_harvesting": 50,
+        "financial_pressure": 25,
+        "structural_obfuscation": 35,
+        "overall_score": 100
+      },
+      "extracted_urls": [
+        {
+          "url": "http://192.168.1.1/login",
+          "domain": "192.168.1.1",
+          "scheme": "http",
+          "is_ip": true,
+          "is_shortened": false,
+          "suspicious_tld": false,
+          "has_lookalike_terms": false,
+          "risk_note": "Raw IP address used instead of hostname"
+        }
+      ],
+      "token_attributions": [
+        {
+          "token": "your",
+          "contribution": 0.923,
+          "direction": "spam",
+          "weight": 4.5469,
+          "tfidf_val": 0.203
+        },
+        {
+          "token": "1",
+          "contribution": 0.921,
+          "direction": "spam",
+          "weight": 4.0205,
+          "tfidf_val": 0.2291
+        },
+        {
+          "token": "to",
+          "contribution": 0.544,
+          "direction": "spam",
+          "weight": 4.9376,
+          "tfidf_val": 0.1102
+        },
+        {
+          "token": "http",
+          "contribution": 0.541,
+          "direction": "spam",
+          "weight": 2.8161,
+          "tfidf_val": 0.1921
+        },
+        {
+          "token": "urgent",
+          "contribution": 0.3775,
+          "direction": "spam",
+          "weight": 2.3819,
+          "tfidf_val": 0.1585
+        },
+        {
+          "token": "account",
+          "contribution": 0.2422,
+          "direction": "spam",
+          "weight": 1.3129,
+          "tfidf_val": 0.1845
+        },
+        {
+          "token": "notice",
+          "contribution": 0.2397,
+          "direction": "spam",
+          "weight": 1.0975,
+          "tfidf_val": 0.2184
+        },
+        {
+          "token": "within",
+          "contribution": 0.1932,
+          "direction": "spam",
+          "weight": 0.8846,
+          "tfidf_val": 0.2184
+        },
+        {
+          "token": "been",
+          "contribution": 0.1855,
+          "direction": "spam",
+          "weight": 1.2988,
+          "tfidf_val": 0.1428
+        },
+        {
+          "token": "24",
+          "contribution": 0.1553,
+          "direction": "spam",
+          "weight": 0.6801,
+          "tfidf_val": 0.2283
+        },
+        {
+          "token": "click",
+          "contribution": 0.1482,
+          "direction": "spam",
+          "weight": 0.6647,
+          "tfidf_val": 0.2229
+        },
+        {
+          "token": "verify",
+          "contribution": 0.1235,
+          "direction": "spam",
+          "weight": 0.5073,
+          "tfidf_val": 0.2435
+        },
+        {
+          "token": "login",
+          "contribution": 0.0738,
+          "direction": "spam",
+          "weight": 0.3232,
+          "tfidf_val": 0.2283
+        },
+        {
+          "token": "action",
+          "contribution": 0.0584,
+          "direction": "spam",
+          "weight": 0.2398,
+          "tfidf_val": 0.2435
+        },
+        {
+          "token": "has",
+          "contribution": 0.0515,
+          "direction": "spam",
+          "weight": 0.3466,
+          "tfidf_val": 0.1486
+        },
+        {
+          "token": "and",
+          "contribution": 0.0483,
+          "direction": "spam",
+          "weight": 0.5624,
+          "tfidf_val": 0.0858
+        },
+        {
+          "token": "has been",
+          "contribution": 0.0285,
+          "direction": "spam",
+          "weight": 0.1498,
+          "tfidf_val": 0.1904
+        },
+        {
+          "token": "activate",
+          "contribution": 0.0173,
+          "direction": "spam",
+          "weight": 0.0736,
+          "tfidf_val": 0.2349
+        },
+        {
+          "token": "due",
+          "contribution": 0.0152,
+          "direction": "spam",
+          "weight": 0.0646,
+          "tfidf_val": 0.2349
+        },
+        {
+          "token": "password",
+          "contribution": -0.0042,
+          "direction": "ham",
+          "weight": -0.0179,
+          "tfidf_val": 0.2349
+        }
+      ],
+      "statistics": {
+        "char_count": 224,
+        "word_count": 30,
+        "line_count": 1,
+        "uppercase_ratio": 0.105,
+        "punctuation_count": 10,
+        "special_char_count": 0
+      },
+      "recommended_actions": [
+        "Do NOT submit any usernames, passwords, or one-time passcodes (OTPs).",
+        "Avoid clicking any links; inspect hostnames and SSL certificates manually if necessary.",
+        "Disregard claims of unexpected prize payouts, inheritances, or wire demands.",
+        "Slow down: artificial time limits and threats of account closure are social-engineering pressure tactics."
+      ],
+      "model_version": "1.0.0",
+      "analysis_duration_ms": 35.92,
+      "timeline": [
+        {
+          "step": "Input Validation & Linguistic Profiling",
+          "timestamp": "2026-10-18T08:06:27.536862+00:00",
+          "duration_ms": 0.43,
+          "status": "completed",
+          "details": "30 words, 224 chars"
+        },
+        {
+          "step": "TF-IDF Vectorization & Classifier Inference",
+          "timestamp": "2026-10-18T08:06:27.566518+00:00",
+          "duration_ms": 29.6,
+          "status": "completed",
+          "details": "Prediction: SPAM, Prob: 0.9058"
+        },
+        {
+          "step": "Deterministic Forensic Rule Matching",
+          "timestamp": "2026-10-18T08:06:27.571879+00:00",
+          "duration_ms": 5.3,
+          "status": "completed",
+          "details": "Identified 5 indicators"
+        },
+        {
+          "step": "URL Extraction & Domain Anomaly Screening",
+          "timestamp": "2026-10-18T08:06:27.572191+00:00",
+          "duration_ms": 0.27,
+          "status": "completed",
+          "details": "Analyzed 1 destination(s) safely"
+        },
+        {
+          "step": "Threat Fingerprint & Risk Score Synthesis",
+          "timestamp": "2026-10-18T08:06:27.572263+00:00",
+          "duration_ms": 0.06,
+          "status": "completed",
+          "details": "Verdict: SPAM, Score: 100/100"
+        }
+      ],
+      "source_type": "email",
+      "sender": "service@paypal-alerts-support.xyz",
+      "raw_message": "URGENT NOTICE: Your PayPal account has been suspended due to suspicious activity. Immediate action required! Verify your password and confirm your identity within 24 hours. Click here to re-activate: http://192.168.1.1/login"
+    }
+  }
+]

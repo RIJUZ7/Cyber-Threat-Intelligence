@@ -1,0 +1,18 @@
+{
+  "dataset_name": "UCI SMS Spam Collection (Cleaned & Deduplicated)",
+  "source_url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+  "raw_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "total_samples": 5160,
+  "class_distribution": {
+    "ham": 4518,
+    "spam": 642
+  },
+  "spam_percentage": 12.44,
+  "ham_percentage": 87.56,
+  "raw_samples_with_duplicates": 5574,
+  "duplicates_removed": 414,
+  "avg_char_length_ham": 70.9,
+  "avg_char_length_spam": 137.4,
+  "avg_word_count_ham": 14.2,
+  "avg_word_count_spam": 23.7
+}
